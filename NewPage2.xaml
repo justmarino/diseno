@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShareStreamApp.NewPage2"
+             Title="Forma de Pago">
+    <StackLayout Padding="20" BackgroundColor="#E6F0FF">
+        <Label Text="Elige tu forma de pago" FontAttributes="Bold" FontSize="20" HorizontalOptions="Center" />
+        <StackLayout>
+            <Button Text="Saldo disponible" />
+            <Button Text="Meses sin tarjeta" />
+            <Button Text="Nueva tarjeta de crédito" />
+            <Button Text="Nueva tarjeta de débito" />
+        </StackLayout>
+        <Button Text="Confirmar" Clicked="OnConfirmButtonClicked" BackgroundColor="#A6C8FF" TextColor="White" />
+    </StackLayout>
+</ContentPage>

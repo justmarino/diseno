@@ -1,0 +1,14 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShareStreamApp.MainPage"
+             Title="Inicio de Sesión">
+    <StackLayout Padding="20" VerticalOptions="Center" BackgroundColor="#E6F0FF">
+        <Image Source="share.png" HeightRequest="100" HorizontalOptions="Center" />
+        <Label Text="SHARE STREAM" FontSize="30" HorizontalOptions="Center" TextColor="Purple" FontAttributes="Bold" />
+        <Entry Placeholder="Usuario" Margin="0,10" />
+        <Entry Placeholder="Contraseña" IsPassword="True" />
+        <Button Text="Iniciar sesión" Clicked="OnLoginButtonClicked" BackgroundColor="#A6C8FF" TextColor="DarkBlue" />
+        <Label Text="Olvidaste tu contraseña" HorizontalOptions="Center" FontSize="Small" />
+        <Button Text="Crear cuenta" BackgroundColor="#D1E9FF" TextColor="DarkBlue" />
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShareStreamApp.NewPage1"
+             Title="Bienvenido">
+    <StackLayout Padding="20" BackgroundColor="#E6F0FF">
+        <Label Text="Elige tu cuenta" FontAttributes="Bold" FontSize="20" HorizontalOptions="Center" />
+        <StackLayout>
+            <StackLayout Orientation="Horizontal" Padding="10">
+                <Image Source="netflix.jfif" WidthRequest="50" />
+                <Label Text="Cantidad" VerticalOptions="Center" HorizontalOptions="StartAndExpand" />
+                <Button Text="-" Clicked="DecreaseNetflix" />
+                <Label x:Name="NetflixQuantity" Text="0" VerticalOptions="Center" />
+                <Button Text="+" Clicked="IncreaseNetflix" />
+                <Label x:Name="NetflixPrice" Text="$0.00" VerticalOptions="Center" />
+            </StackLayout>
+            <!-- Repite para Amazon, HBO, Spotify -->
+            <!-- Amazon -->
+           
+
+        </StackLayout>
+        <Button Text="Pagar" Clicked="OnPayButtonClicked" BackgroundColor="#A6C8FF" TextColor="White" />
+        <Label x:Name="TotalPriceLabel" Text="Total: $0.00" HorizontalOptions="Center" FontSize="Large" />
+    </StackLayout>
+</ContentPage>
+
